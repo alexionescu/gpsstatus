@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  GPS Status!
+
+  Created by Alex Ionescu on 4/30/12.
+  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+*/
+
+"Status" = "Status";
+"Signal" = "Signal";
+"Unavailable" = "Unavailable";
+"Location" = "Location";
+"Latitude" = "Latitude";
+"Longitude" = "Longitude";
+"Altitude" = "Altitude";
+"Accuracy" = "Accuracy";
+"Position" = "Position";
+"Course" = "Course";
+"Speed" = "Speed";
+"True Heading" = "True Heading";
+"Magnetic Heading" = "Magnetic Heading";
+"Last Update" = "Last Update";
+"Meters" = "Meters";
+"Feet" = "Feet";
+"mi/hr" = "mi/hr";
+"km/hr" = "km/hr";
+"m/s" = "m/s";
+"GPS Status! needs location services to be on in order to operate." = "GPS Status! needs location services to be on in order to operate.";

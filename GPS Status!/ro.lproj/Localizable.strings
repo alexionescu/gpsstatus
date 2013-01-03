@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  GPS Status!
+
+  Created by Alex Ionescu on 4/30/12.
+  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+*/
+
+"Status" = "Status";
+"Signal" = "Semnal";
+"Unavailable" = "Nu se poate găsi";
+"Location" = "Locație";
+"Latitude" = "Latitudine";
+"Longitude" = "Longitudine";
+"Altitude" = "Altitudine";
+"Accuracy" = "Precizie";
+"Position" = "Posiție";
+"Course" = "Traseu";
+"Speed" = "Viteză";
+"True Heading" = "True Heading";
+"Magnetic Heading" = "Magnetic Heading";
+"Last Update" = "Ultima actualizare";
+"Meters" = "Metri";
+"Feet" = "Feet";
+"mi/hr" = "mile/oră";
+"km/hr" = "km/hr";
+"m/s" = "m/s";
+"GPS Status! needs location services to be on in order to operate." = "GPS Status! necesită acces la serviciilor de localizare pentru funcționare.";
