@@ -173,16 +173,30 @@ typedef enum
 }
 - (NSString *)getLatitude
 {
-    return [[[[self data] objectAtIndex:1] objectAtIndex:1] detail];
+    //NSLog([[[[self data] objectAtIndex:1] objectAtIndex:1] description]);
+    //return [[[[self data] objectAtIndex:1] objectAtIndex:1] detail];
+    return [self formatPosition:[[[[self data] objectAtIndex:1] objectAtIndex:1] detail] ofType:LATITUDE];
 }
 - (NSString *)getLongitude
 {
-    return [[[[self data] objectAtIndex:1] objectAtIndex:2] detail];
+    //return [[[[self data] objectAtIndex:1] objectAtIndex:2] detail];
+    return [self formatPosition:[[[[self data] objectAtIndex:1] objectAtIndex:2] detail] ofType:LONGITUDE];
 }
 - (NSString *)getAltitude
 {
-    return [[[[self data] objectAtIndex:1] objectAtIndex:3] detail];
+    return [self formatDistance:[[[[self data] objectAtIndex:1] objectAtIndex:3] detail] allowNegativeValues:YES];
 }
+
+- (NSString *)getPositionAccuracy
+{
+    return [self formatDistance:[[[[self data] objectAtIndex:2] objectAtIndex:1] detail] allowNegativeValues:NO];
+}
+
+- (NSString *)getAltitudeAccuracy
+{
+    return [self formatDistance:[[[[self data] objectAtIndex:2] objectAtIndex:2] detail] allowNegativeValues:NO];
+}
+
 #pragma mark CLLocationManagerDelegate METHODS
 - (CLLocationManager *)locationManager
 {

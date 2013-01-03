@@ -29,6 +29,11 @@
     return [NSString stringWithFormat:@"%@ %@", _title, _detail];
 }
 
+- (NSString *)detail
+{
+    return [NSString stringWithFormat:@"%@", _detail];
+}
+
 - (void)dealloc
 {
     _title = nil;

@@ -60,6 +60,9 @@
             MFMailComposeViewController *mailVC = [[MFMailComposeViewController alloc] init];
             [mailVC setMailComposeDelegate:self];
             [mailVC setSubject:@"My GPS Status!"];
+            NSString *text = [NSString stringWithFormat:@"Latitude: %@\nLongitude: %@\nAltitude: %@\nAccuracy (Position): %@\nAccuracy (Altitude): %@\n",
+                              [[self gpsData] getLatitude], [[self gpsData] getLongitude], [[self gpsData] getAltitude], [[self gpsData] getPositionAccuracy], [[self gpsData] getAltitudeAccuracy]];
+            [mailVC setMessageBody:text isHTML:NO];
             
             [self presentModalViewController:mailVC animated:YES];
         }

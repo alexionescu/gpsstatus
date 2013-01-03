@@ -14,6 +14,9 @@
 @interface GPSData : NSObject<CLLocationManagerDelegate, UITableViewDataSource>
 
 - (void)turnGPSon:(BOOL)value;
-- (NSString *)getAccuracy;
-
+- (NSString *)getAltitude;
+- (NSString *)getLatitude;
+- (NSString *)getLongitude;
+- (NSString *)getPositionAccuracy;
+- (NSString *)getAltitudeAccuracy;
 @end
